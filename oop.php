@@ -41,6 +41,9 @@ class Rocket
 }
 
 $falcon = new Rocket("Falcon", "200000", "8000");
+echo "<br>";
+echo $falcon->nameReturn();
+
 // inherithed class
 class Reusable extends Rocket
 {
@@ -67,5 +70,7 @@ abstract class SecretMissiles implements explosiveRockets
     }
 }
 
-
-
+echo "<br>";
+$falcon2 = new Reusable("Falcon 2", "400000", "9000",);
+echo "<br>";
+echo $falcon2->nameReturn();
